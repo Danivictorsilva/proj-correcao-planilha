@@ -47,13 +47,13 @@
                         $msg = $r[3];
                     }
                     echo "<br>";
-                    echo $r[0] . ': ' . $msg;
+                    echo '<b>' . $r[0] . ': </b>' . $msg;
                     echo "</br>";
 
                     $i++;
                 };
                 echo "<br>";
-                echo 'Resultado percentual: ' . number_format($result / ($i - 1) * 100, 1) . '%';
+                echo '<b>Resultado percentual: </b>' . number_format($result / ($i - 1) * 100, 1) . '%';
                 echo "</br>";
             } else {
                 echo 'xlsx error: ' . $xlsx->error();
